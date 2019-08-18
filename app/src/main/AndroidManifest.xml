@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.klontong.mobileapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="@xml/backup_descriptor"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".OnboardingMain"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".JoinMain"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".LoginMain"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".RegisterMain"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".ResetPassword"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".LoginMain">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginMain"/>
+        </activity>
+
+        <activity android:name=".UnderDevelopment"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
+        <activity android:name=".TermConds"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".RegisterMain">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RegisterMain"/>
+        </activity>
+
+        <activity android:name=".KodeOTP"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".RegisterMain">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RegisterMain"/>
+        </activity>
+
+    </application>
+</manifest>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_lokasi"
+        android:icon="@drawable/ic_outline_location"
+        app:showAsAction="always"
+        android:title="@string/alamat_antar"/>
+
+    <item
+        android:id="@+id/nav_more_one"
+        android:icon="@drawable/ic_outline_more"
+        app:showAsAction="always"
+        android:title="@string/lengkap">
+
+        <menu>
+            <item
+                android:id="@+id/navigation_help_one"
+                android:icon="@drawable/ic_outline_help"
+                app:showAsAction="ifRoom|withText"
+                android:title="@string/bantuan"/>
+
+            <item
+                android:id="@+id/navigation_faq_one"
+                android:icon="@drawable/ic_outline_faq"
+                app:showAsAction="ifRoom|withText"
+                android:title="@string/faq"/>
+
+            <item
+                android:id="@+id/navigation_setting_one"
+                android:icon="@drawable/ic_outline_settings"
+                app:showAsAction="ifRoom|withText"
+                android:title="@string/pengaturan"/>
+        </menu>
+
+    </item>
+</menu>

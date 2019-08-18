@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "982516365552",
+    "firebase_url": "https://klontong-3bbc1.firebaseio.com",
+    "project_id": "klontong-3bbc1",
+    "storage_bucket": "klontong-3bbc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982516365552:android:854ceb97230cbd56",
+        "android_client_info": {
+          "package_name": "com.klontong.mobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982516365552-m0a15iol9jhoe3as9c2i4lhvnq6dqgd6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.klontong.mobileapp",
+            "certificate_hash": "3a95aa2f55a6d6ca225c7aa97c9a9b93f5a96a77"
+          }
+        },
+        {
+          "client_id": "982516365552-nspijsh9t9q842umtngqd94vmisgm299.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ-czhUx-XCbj51KYoFVzWTGyGiuqqjMc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982516365552-nspijsh9t9q842umtngqd94vmisgm299.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

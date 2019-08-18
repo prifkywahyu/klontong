@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <include layout="@layout/toolbar_main"
+        android:id="@+id/top_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_toolbar"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/scriptVerif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:text="@string/kode_verifikasi"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_first"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:id="@+id/testOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="+6285788290018"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:clickable="false"/>
+
+                <TextView
+                    android:id="@+id/testTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Toko Makmur Sejahtera"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:clickable="false"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="30dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kodeOtp"
+                    android:hint="@string/kode_otp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:theme="@style/AppTheme"
+                    android:textColor="@android:color/black"
+                    android:textSize="28sp"
+                    android:textColorHighlight="@color/colorAccent"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/transparent"
+        android:layout_above="@id/viewreal"/>
+
+    <View
+        android:id="@+id/viewreal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBottom"
+        android:layout_above="@id/verif_button"/>
+
+    <Button
+        android:id="@+id/verif_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="@drawable/button_main"
+        android:text="@string/verifikasi_sekarang"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
